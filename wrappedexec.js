@@ -7,7 +7,7 @@ const execWrapPath = require.resolve('./exec-wrap')
     , after        = require('after')
 
 function fix (exercise) {
-  var dataPath = path.join(os.tmpDir(), '~workshopper.wraptmp.' + process.pid)
+  var dataPath = path.join(os.tmpdir(), '~workshopper.wraptmp.' + process.pid)
   var submissionPath = dataPath + '-submission'
   var solutionPath   = dataPath + '-solution'
 
